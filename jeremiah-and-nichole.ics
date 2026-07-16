@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Heartstrings Studio//Jeremiah and Nichole Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20260919T190000Z-jeremiah-nichole@heartstringsstudio.github.io
+DTSTAMP:20260716T120000Z
+DTSTART:20260919T190000Z
+SUMMARY:Jeremiah & Nichole's Wedding
+LOCATION:Nine Hives Meadery\, 1116 Cambria Road\, Lumberport\, WV
+DESCRIPTION:Nothing fancy\, just love. A casual outdoor ceremony under the
+ trees with a cookout to follow. Please arrive by 2:45 pm.
+URL:https://heartstringsstudio.github.io/howe/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
