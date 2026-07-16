@@ -5,13 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jeremiah &amp; Nichole — September 19, 2026</title>
 <meta name="description" content="Nothing fancy, just love. Join us for a casual ceremony and cookout to celebrate the marriage of Jeremiah &amp; Nichole — Saturday, September 19, 2026 at 3:00 PM, Nine Hives Meadery, Lumberport, WV.">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="canonical" href="https://heartstringsstudio.github.io/howe/">
 <meta property="og:title" content="Jeremiah &amp; Nichole — September 19, 2026">
 <meta property="og:description" content="Nothing fancy, just love. A casual ceremony and cookout at Nine Hives Meadery, Lumberport, WV. Saturday, September 19, 2026 at 3:00 PM.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="og-image.jpg">
+<meta property="og:url" content="https://heartstringsstudio.github.io/howe/">
+<meta property="og:site_name" content="Jeremiah &amp; Nichole">
+<meta property="og:image" content="https://heartstringsstudio.github.io/howe/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jeremiah and Nichole wedding announcement with string lights and a mountain ridgeline">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jeremiah &amp; Nichole — September 19, 2026">
+<meta name="twitter:description" content="Nothing fancy, just love. Join us for a casual ceremony and cookout at Nine Hives Meadery.">
+<meta name="twitter:image" content="https://heartstringsstudio.github.io/howe/og-image.jpg">
+<meta name="twitter:image:alt" content="Jeremiah and Nichole wedding announcement with string lights and a mountain ridgeline">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230d0d0d'/%3E%3Cpath d='M32 50S12 39 12 23c0-11 14-15 20-5 6-10 20-6 20 5 0 16-20 27-20 27Z' fill='%23ffe9b8'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Jeremiah & Nichole's Wedding",
+  "description": "A casual outdoor ceremony and cookout celebrating Jeremiah and Nichole.",
+  "startDate": "2026-09-19T15:00:00-04:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "image": "https://heartstringsstudio.github.io/howe/og-image.jpg",
+  "url": "https://heartstringsstudio.github.io/howe/",
+  "location": {
+    "@type": "Place",
+    "name": "Nine Hives Meadery",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1116 Cambria Road",
+      "addressLocality": "Lumberport",
+      "addressRegion": "WV",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
 <style>
   :root {
     --bg-deep: #0d0d0d;
@@ -20,6 +58,8 @@
     --silver-dim: #9a9a9a;
     --silver-bright: #e8e8e8;
     --glow: #ffe9b8;
+    --glow-deep: #c9a96e;
+    --line: #343434;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,17 +79,23 @@
   /* ---------- shared bits ---------- */
 
   .metallic {
+    color: var(--silver-bright);
+  }
+
+  @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .metallic {
     background-image:
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E"),
       linear-gradient(168deg, #f4f4f4 0%, #b9b9b9 18%, #e9e9e9 34%, #8d8d8d 52%, #d6d6d6 68%, #a3a3a3 84%, #ececec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    }
   }
 
   .smallcaps {
     font-variant: small-caps;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.14em;
     color: var(--silver);
   }
 
@@ -94,6 +140,76 @@
     z-index: 2;
   }
 
+  a:focus-visible {
+    outline: 2px solid var(--glow);
+    outline-offset: 4px;
+  }
+
+  .section-heading {
+    max-width: 42rem;
+    margin: 0 auto 2.8rem;
+    text-align: center;
+  }
+
+  .section-heading h2 {
+    color: var(--silver-bright);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .section-heading p {
+    max-width: 34rem;
+    margin: 0.8rem auto 0;
+    color: var(--silver-dim);
+  }
+
+  .action-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+  }
+
+  .action-btn {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.5rem;
+    border: 1px solid #6f6f6f;
+    color: var(--silver-bright);
+    text-decoration: none;
+    font-variant: small-caps;
+    letter-spacing: 0.16em;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+
+  .action-btn.primary {
+    border-color: var(--glow-deep);
+    background: var(--glow);
+    color: #17130d;
+  }
+
+  .action-btn:hover {
+    border-color: var(--silver-bright);
+    background-color: rgba(255, 255, 255, 0.07);
+    transform: translateY(-1px);
+  }
+
+  .action-btn.primary:hover {
+    border-color: var(--glow);
+    background: #fff2d3;
+  }
+
+  @media (forced-colors: active) {
+    .metallic { color: CanvasText; background: none; }
+    .action-btn { border: 1px solid ButtonText; }
+  }
+
   /* ---------- hero ---------- */
 
   .hero {
@@ -104,7 +220,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 7.5rem 1.25rem 11rem;
+    padding: 6.5rem 1.25rem 8.5rem;
     background: linear-gradient(180deg, #0a0a0a 0%, var(--bg-deep) 45%, #141414 100%);
     overflow: hidden;
   }
@@ -159,7 +275,7 @@
     html { scroll-behavior: auto; }
   }
 
-  .hero-content { position: relative; z-index: 3; max-width: 46rem; }
+  .hero-content { position: relative; z-index: 3; max-width: 48rem; }
 
   .headline {
     font-size: clamp(3.2rem, 12vw, 7.5rem);
@@ -188,7 +304,7 @@
   }
 
   .invite-line {
-    margin: 2.8rem auto 0;
+    margin: 2rem auto 0;
     max-width: 34rem;
     font-size: clamp(0.95rem, 2.6vw, 1.15rem);
     font-variant: small-caps;
@@ -199,21 +315,30 @@
   .names {
     font-size: clamp(3rem, 10vw, 5.8rem);
     line-height: 1.25;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
     padding: 0 0.5rem 0.6rem;
     word-spacing: 0.3em;
   }
 
   .when, .where {
     font-variant: small-caps;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.14em;
     font-size: clamp(1.05rem, 3vw, 1.4rem);
     color: var(--silver-bright);
   }
+  .where { margin-top: 0.4rem; }
   .where .venue { font-size: 1.12em; }
   .where a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #6f6f6f;
+    text-underline-offset: 0.22em;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+  .where a:hover,
+  .where a:focus-visible {
+    color: var(--silver-bright);
+    text-decoration-color: var(--glow);
   }
 
   .ridgeline {
@@ -232,7 +357,8 @@
   .countdown {
     background: linear-gradient(180deg, #171717 0%, var(--bg-soft) 100%);
     text-align: center;
-    padding: 5rem 1.25rem 5.5rem;
+    padding: 2.8rem 1.25rem 3.2rem;
+    border-bottom: 1px solid #242424;
   }
 
   .countdown h2 {
@@ -247,12 +373,13 @@
     display: none;
     justify-content: center;
     gap: clamp(1.5rem, 6vw, 3.5rem);
-    margin-top: 2.2rem;
+    margin-top: 1.6rem;
   }
   .js .count-grid { display: flex; flex-wrap: wrap; }
+  .count-grid[hidden] { display: none; }
 
   .count-unit .num {
-    font-size: clamp(2.8rem, 9vw, 4.6rem);
+    font-size: clamp(2.4rem, 8vw, 3.8rem);
     font-weight: 600;
     line-height: 1;
     min-width: 2ch;
@@ -267,18 +394,19 @@
     color: var(--silver-dim);
   }
 
-  .count-date {
-    margin-top: 2.4rem;
-    font-size: clamp(1.3rem, 4vw, 1.8rem);
+  .count-message,
+  .count-fallback {
+    margin-top: 1.2rem;
+    color: var(--silver-bright);
+    font-size: clamp(1.25rem, 4vw, 1.7rem);
     font-style: italic;
-    color: var(--silver);
   }
 
   /* ---------- details ---------- */
 
   .details {
-    background: var(--bg-soft);
-    padding: 4.5rem 1.25rem 6rem;
+    background: linear-gradient(180deg, var(--bg-soft), #151515);
+    padding: 5rem 1.25rem 5.5rem;
   }
 
   .details-inner {
@@ -291,14 +419,16 @@
 
   .detail-block {
     text-align: center;
-    padding: 2.5rem 1.75rem;
-    border: 1px solid #2e2e2e;
-    background: linear-gradient(180deg, #161616, #101010);
+    padding: 2.1rem 1.75rem 1rem;
+    border-top: 1px solid #454545;
   }
 
   .detail-block h3 {
-    font-size: clamp(2rem, 5vw, 2.6rem);
-    font-weight: 400;
+    color: var(--silver-bright);
+    font-size: clamp(1.45rem, 4vw, 1.8rem);
+    font-weight: 500;
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
     margin-bottom: 1.2rem;
   }
 
@@ -314,22 +444,57 @@
     font-size: 1rem;
   }
 
-  .directions-btn {
-    display: inline-block;
+  .detail-block .action-btn {
     margin-top: 1.4rem;
-    padding: 0.55rem 1.6rem;
-    border: 1px solid #6f6f6f;
-    color: var(--silver-bright);
-    text-decoration: none;
-    font-variant: small-caps;
-    letter-spacing: 0.22em;
-    font-size: 0.95rem;
-    transition: border-color 0.25s ease, background-color 0.25s ease;
   }
-  .directions-btn:hover,
-  .directions-btn:focus-visible {
-    border-color: var(--silver-bright);
-    background-color: rgba(255, 255, 255, 0.05);
+
+  /* ---------- before you go ---------- */
+
+  .practical {
+    padding: 5rem 1.25rem 5.5rem;
+    background: linear-gradient(180deg, #151515, var(--bg-deep));
+  }
+
+  .practical-list {
+    max-width: 50rem;
+    margin: 0 auto;
+    border-top: 1px solid var(--line);
+  }
+
+  .practical-item {
+    display: grid;
+    grid-template-columns: minmax(9rem, 0.35fr) 1fr;
+    gap: 1.5rem;
+    padding: 1.45rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .practical-item h3 {
+    color: var(--silver-bright);
+    font-size: 1rem;
+    font-variant: small-caps;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+  }
+
+  .practical-item p {
+    color: var(--silver);
+  }
+
+  .practical-item a {
+    color: var(--silver-bright);
+    text-underline-offset: 0.2em;
+    text-decoration-color: #777;
+  }
+
+  @media (max-width: 520px) {
+    .hero { padding-top: 6rem; padding-bottom: 7.5rem; }
+    .action-row { flex-direction: column; align-items: stretch; }
+    .action-btn { width: 100%; }
+    .practical-item {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
   }
 
   /* ---------- footer ---------- */
@@ -443,12 +608,14 @@
 
     <p class="when">Saturday, September 19th, 2026<br>at 3:00 pm</p>
 
-    <div class="heart-divider" aria-hidden="true"><span>♥</span></div>
-
     <p class="where">
-      <span class="venue">Nine Hives Meadery</span><br>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV">1116 Cambria Road<br>Lumberport, WV</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV"><span class="venue">Nine Hives Meadery</span><br>Lumberport, WV</a>
     </p>
+
+    <nav class="action-row" aria-label="Wedding information">
+      <a class="action-btn primary" href="jeremiah-and-nichole.ics" download>Add to Calendar</a>
+      <a class="action-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV">Get Directions</a>
+    </nav>
   </div>
 
   <!-- misty ridgeline -->
@@ -473,39 +640,71 @@
 </header>
 
 <!-- ================= COUNTDOWN ================= -->
-<section class="countdown" aria-label="Countdown to the big day">
-  <h2>Counting down to the big day</h2>
+<section class="countdown" aria-labelledby="count-heading">
+  <h2 id="count-heading">Counting down to the big day</h2>
   <div class="count-grid" id="countdown" role="timer" aria-live="off">
     <div class="count-unit"><span class="num metallic" id="cd-days">—</span><span class="label">Days</span></div>
     <div class="count-unit"><span class="num metallic" id="cd-hours">—</span><span class="label">Hours</span></div>
     <div class="count-unit"><span class="num metallic" id="cd-mins">—</span><span class="label">Minutes</span></div>
     <div class="count-unit"><span class="num metallic" id="cd-secs">—</span><span class="label">Seconds</span></div>
   </div>
-  <p class="count-date script">Saturday, September 19th, 2026</p>
+  <p class="count-message" id="count-message" role="status" aria-live="polite" hidden></p>
+  <noscript><p class="count-fallback">Saturday, September 19th, 2026 at 3:00 pm</p></noscript>
 </section>
 
 <!-- ================= DETAILS ================= -->
-<section class="details" aria-label="Event details">
+<section class="details" aria-labelledby="details-heading">
+  <div class="section-heading">
+    <h2 id="details-heading">The Details</h2>
+    <p>Everything you need for a relaxed afternoon with us.</p>
+  </div>
   <div class="details-inner">
 
     <div class="detail-block">
-      <h3 class="script metallic">When</h3>
+      <h3>When</h3>
       <p class="smallcaps">Saturday, September 19th<br>3:00 pm</p>
       <p class="fine">Plan to arrive by 2:45 so you can find a seat and say hello.</p>
     </div>
 
     <div class="detail-block">
-      <h3 class="script metallic">Where</h3>
+      <h3>Where</h3>
       <p class="smallcaps">Nine Hives Meadery<br>1116 Cambria Road<br>Lumberport, WV</p>
-      <a class="directions-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV">Get Directions</a>
+      <a class="action-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV">Get Directions</a>
     </div>
 
     <div class="detail-block">
-      <h3 class="script metallic">What to Expect</h3>
+      <h3>What to Expect</h3>
       <p>Casual dress — truly. An outdoor ceremony under the trees, with a cookout to follow.</p>
       <p class="fine">Come as you are. There will be food, music, and two people very glad you showed up.</p>
     </div>
 
+  </div>
+</section>
+
+<!-- ================= BEFORE YOU GO ================= -->
+<section class="practical" aria-labelledby="practical-heading">
+  <div class="section-heading">
+    <h2 id="practical-heading">Before You Go</h2>
+    <p>A few simple notes to help the day feel easy.</p>
+  </div>
+
+  <div class="practical-list">
+    <div class="practical-item">
+      <h3>Arrival</h3>
+      <p>Please plan to arrive by 2:45 pm so there is time to get settled before the ceremony begins.</p>
+    </div>
+    <div class="practical-item">
+      <h3>Dress &amp; Weather</h3>
+      <p>Casual dress is perfect. Because the ceremony is outdoors, check the forecast and choose comfortable shoes and layers.</p>
+    </div>
+    <div class="practical-item">
+      <h3>Food</h3>
+      <p>A cookout will follow the ceremony. If you have a dietary or accessibility question, please reach out directly to Jeremiah or Nichole before the wedding.</p>
+    </div>
+    <div class="practical-item">
+      <h3>Just Join Us</h3>
+      <p>No response is needed—just come as you are. We are looking forward to celebrating with you.</p>
+    </div>
   </div>
 </section>
 
@@ -531,19 +730,44 @@
 <script>
   document.documentElement.classList.add('js');
   var target = new Date('2026-09-19T15:00:00-04:00').getTime();
-  var elDays = document.getElementById('cd-days'),
+  var endOfWeddingDay = new Date('2026-09-20T00:00:00-04:00').getTime();
+  var countGrid = document.getElementById('countdown'),
+      countHeading = document.getElementById('count-heading'),
+      countMessage = document.getElementById('count-message'),
+      timerId,
+      elDays = document.getElementById('cd-days'),
       elHours = document.getElementById('cd-hours'),
       elMins = document.getElementById('cd-mins'),
       elSecs = document.getElementById('cd-secs');
+
+  function showWeddingMessage(message) {
+    countGrid.hidden = true;
+    countMessage.hidden = false;
+    countMessage.textContent = message;
+    if (timerId) clearInterval(timerId);
+  }
+
   function tick() {
-    var diff = Math.max(0, target - Date.now());
+    var now = Date.now();
+    if (now >= endOfWeddingDay) {
+      countHeading.textContent = 'With love and thanks';
+      showWeddingMessage('Thank you for celebrating with us.');
+      return;
+    }
+    if (now >= target) {
+      countHeading.textContent = 'Today’s the day!';
+      showWeddingMessage('We can’t wait to celebrate with you.');
+      return;
+    }
+
+    var diff = target - now;
     elDays.textContent  = Math.floor(diff / 86400000);
     elHours.textContent = Math.floor(diff / 3600000) % 24;
     elMins.textContent  = Math.floor(diff / 60000) % 60;
     elSecs.textContent  = Math.floor(diff / 1000) % 60;
   }
   tick();
-  setInterval(tick, 1000);
+  if (Date.now() < target) timerId = setInterval(tick, 1000);
 </script>
 </body>
 </html>
