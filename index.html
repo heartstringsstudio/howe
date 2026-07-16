@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeremiah &amp; Nichole — September 19, 2026</title>
+<meta name="description" content="Nothing fancy, just love. Join us for a casual ceremony and cookout to celebrate the marriage of Jeremiah &amp; Nichole — Saturday, September 19, 2026 at 3:00 PM, Nine Hives Meadery, Lumberport, WV.">
+<meta property="og:title" content="Jeremiah &amp; Nichole — September 19, 2026">
+<meta property="og:description" content="Nothing fancy, just love. A casual ceremony and cookout at Nine Hives Meadery, Lumberport, WV. Saturday, September 19, 2026 at 3:00 PM.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #0d0d0d;
+    --bg-soft: #1a1a1a;
+    --silver: #c9c9c9;
+    --silver-dim: #9a9a9a;
+    --silver-bright: #e8e8e8;
+    --glow: #ffe9b8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--silver);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ---------- shared bits ---------- */
+
+  .metallic {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E"),
+      linear-gradient(168deg, #f4f4f4 0%, #b9b9b9 18%, #e9e9e9 34%, #8d8d8d 52%, #d6d6d6 68%, #a3a3a3 84%, #ececec 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .smallcaps {
+    font-variant: small-caps;
+    letter-spacing: 0.22em;
+    color: var(--silver);
+  }
+
+  .script {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+  }
+
+  .heart-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    margin: 2.2rem auto;
+    max-width: 260px;
+  }
+  .heart-divider::before,
+  .heart-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #8d8d8d);
+  }
+  .heart-divider::after {
+    background: linear-gradient(90deg, #8d8d8d, transparent);
+  }
+  .heart-divider span {
+    font-size: 0.95rem;
+    line-height: 1;
+    background-image: linear-gradient(160deg, #eee 10%, #999 55%, #ddd 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .leaf-corner {
+    position: absolute;
+    width: clamp(110px, 22vw, 240px);
+    height: auto;
+    opacity: 0.85;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* ---------- hero ---------- */
+
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7.5rem 1.25rem 11rem;
+    background: linear-gradient(180deg, #0a0a0a 0%, var(--bg-deep) 45%, #141414 100%);
+    overflow: hidden;
+  }
+
+  .lights {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max(100%, 900px);
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .bulb { animation: twinkle 3.4s ease-in-out infinite; }
+  .bulb:nth-of-type(3n)  { animation-delay: -1.1s; animation-duration: 4.1s; }
+  .bulb:nth-of-type(4n)  { animation-delay: -2.3s; animation-duration: 3.1s; }
+  .bulb:nth-of-type(5n)  { animation-delay: -0.6s; animation-duration: 4.7s; }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.55; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bulb { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  .hero-content { position: relative; z-index: 3; max-width: 46rem; }
+
+  .headline {
+    font-size: clamp(3.2rem, 12vw, 7.5rem);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 0.98;
+    text-transform: uppercase;
+  }
+
+  .subline {
+    font-size: clamp(2.6rem, 9vw, 5.2rem);
+    line-height: 1.15;
+    margin-top: 0.4rem;
+  }
+  .subline .tiny-heart {
+    display: inline-block;
+    font-size: 0.42em;
+    vertical-align: 0.45em;
+    margin: 0 0.18em;
+  }
+
+  .invite-line {
+    margin: 2.8rem auto 0;
+    max-width: 34rem;
+    font-size: clamp(0.95rem, 2.6vw, 1.15rem);
+    font-variant: small-caps;
+    letter-spacing: 0.18em;
+    color: var(--silver);
+  }
+
+  .names {
+    font-size: clamp(3rem, 10vw, 5.8rem);
+    line-height: 1.25;
+    margin-top: 1.4rem;
+    padding: 0 0.5rem 0.6rem;
+    word-spacing: 0.3em;
+  }
+
+  .when, .where {
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+    font-size: clamp(1.05rem, 3vw, 1.4rem);
+    color: var(--silver-bright);
+  }
+  .where .venue { font-size: 1.12em; }
+  .where a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .ridgeline {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+    display: block;
+  }
+
+  /* ---------- countdown ---------- */
+
+  .countdown {
+    background: linear-gradient(180deg, #171717 0%, var(--bg-soft) 100%);
+    text-align: center;
+    padding: 5rem 1.25rem 5.5rem;
+  }
+
+  .countdown h2 {
+    font-weight: 500;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    font-size: 1.05rem;
+    color: var(--silver-dim);
+  }
+
+  .count-grid {
+    display: none;
+    justify-content: center;
+    gap: clamp(1.5rem, 6vw, 3.5rem);
+    margin-top: 2.2rem;
+  }
+  .js .count-grid { display: flex; }
+
+  .count-unit .num {
+    font-size: clamp(2.8rem, 9vw, 4.6rem);
+    font-weight: 600;
+    line-height: 1;
+    min-width: 2ch;
+    font-variant-numeric: tabular-nums;
+  }
+  .count-unit .label {
+    display: block;
+    margin-top: 0.6rem;
+    font-variant: small-caps;
+    letter-spacing: 0.25em;
+    font-size: 0.85rem;
+    color: var(--silver-dim);
+  }
+
+  .count-date {
+    margin-top: 2.4rem;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    font-style: italic;
+    color: var(--silver);
+  }
+
+  /* ---------- details ---------- */
+
+  .details {
+    background: var(--bg-soft);
+    padding: 4.5rem 1.25rem 6rem;
+  }
+
+  .details-inner {
+    max-width: 62rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .detail-block {
+    text-align: center;
+    padding: 2.5rem 1.75rem;
+    border: 1px solid #2e2e2e;
+    background: linear-gradient(180deg, #161616, #101010);
+  }
+
+  .detail-block h3 {
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+  }
+
+  .detail-block p {
+    color: var(--silver);
+    font-size: 1.1rem;
+  }
+
+  .detail-block .fine {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: var(--silver-dim);
+    font-size: 1rem;
+  }
+
+  .directions-btn {
+    display: inline-block;
+    margin-top: 1.4rem;
+    padding: 0.55rem 1.6rem;
+    border: 1px solid #6f6f6f;
+    color: var(--silver-bright);
+    text-decoration: none;
+    font-variant: small-caps;
+    letter-spacing: 0.22em;
+    font-size: 0.95rem;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+  }
+  .directions-btn:hover,
+  .directions-btn:focus-visible {
+    border-color: var(--silver-bright);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    position: relative;
+    text-align: center;
+    padding: 5rem 1.25rem 4rem;
+    background: linear-gradient(180deg, var(--bg-soft) 0%, #0a0a0a 100%);
+    overflow: hidden;
+  }
+
+  footer .script { font-size: clamp(1.9rem, 6vw, 2.6rem); }
+
+  footer .meta {
+    margin-top: 1rem;
+    font-variant: small-caps;
+    letter-spacing: 0.24em;
+    font-size: 0.95rem;
+    color: var(--silver-dim);
+  }
+</style>
+</head>
+<body>
+
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafSilver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcdcdc"/>
+      <stop offset="45%" stop-color="#8f8f8f"/>
+      <stop offset="75%" stop-color="#c4c4c4"/>
+      <stop offset="100%" stop-color="#6f6f6f"/>
+    </linearGradient>
+    <g id="oakleaf">
+      <path fill="url(#leafSilver)" d="M50,10 C54,14 56,18 55,24 C67,17 76,27 65,37 C60,40 58,42 59,47 C76,42 84,54 70,63 C64,66 62,68 63,72 C82,70 88,84 72,91 C66,93 64,95 65,99 C80,99 84,112 70,117 C63,119 61,121 62,125 C74,127 76,139 63,141 C58,143 55,146 54,150 C53,155 52,158 51,162 L52,192 C52,197 48,197 48,192 L49,162 C48,158 47,155 46,150 C45,146 42,143 37,141 C24,139 26,127 38,125 C39,121 37,119 30,117 C16,112 20,99 35,99 C36,95 34,93 28,91 C12,84 18,70 37,72 C38,68 36,66 30,63 C16,54 24,42 41,47 C42,42 40,40 35,37 C24,27 33,17 45,24 C44,18 46,14 50,10 Z"/>
+      <path fill="none" stroke="#5f5f5f" stroke-width="1.2" opacity="0.7" d="M50,20 L50,188 M50,40 L63,34 M50,60 L68,56 M50,86 L72,80 M50,112 L68,108 M50,136 L62,132 M50,40 L37,34 M50,60 L32,56 M50,86 L28,80 M50,112 L32,108 M50,136 L38,132"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+
+  <!-- string lights -->
+  <svg class="lights" viewBox="0 0 1200 190" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="bulbGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fff4d6" stop-opacity="0.95"/>
+        <stop offset="35%" stop-color="#ffe9b8" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#ffe9b8" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <path d="M-20,10 Q300,120 620,52 T1220,70" fill="none" stroke="#3a352c" stroke-width="1.5"/>
+    <path d="M-20,60 Q380,175 760,95 T1230,140" fill="none" stroke="#332f27" stroke-width="1.5"/>
+    <g>
+      <g class="bulb"><circle cx="90"  cy="47"  r="16" fill="url(#bulbGlow)"/><circle cx="90"  cy="47"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="215" cy="79"  r="16" fill="url(#bulbGlow)"/><circle cx="215" cy="79"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="345" cy="90"  r="16" fill="url(#bulbGlow)"/><circle cx="345" cy="90"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="480" cy="78"  r="16" fill="url(#bulbGlow)"/><circle cx="480" cy="78"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="620" cy="52"  r="16" fill="url(#bulbGlow)"/><circle cx="620" cy="52"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="760" cy="40"  r="16" fill="url(#bulbGlow)"/><circle cx="760" cy="40"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="900" cy="48"  r="16" fill="url(#bulbGlow)"/><circle cx="900" cy="48"  r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="1040" cy="60" r="16" fill="url(#bulbGlow)"/><circle cx="1040" cy="60" r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="1160" cy="68" r="16" fill="url(#bulbGlow)"/><circle cx="1160" cy="68" r="3.4" fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="150" cy="98"  r="14" fill="url(#bulbGlow)"/><circle cx="150" cy="98"  r="3"   fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="300" cy="134" r="14" fill="url(#bulbGlow)"/><circle cx="300" cy="134" r="3"   fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="460" cy="148" r="14" fill="url(#bulbGlow)"/><circle cx="460" cy="148" r="3"   fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="620" cy="128" r="14" fill="url(#bulbGlow)"/><circle cx="620" cy="128" r="3"   fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="780" cy="98"  r="14" fill="url(#bulbGlow)"/><circle cx="780" cy="98"  r="3"   fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="940" cy="106" r="14" fill="url(#bulbGlow)"/><circle cx="940" cy="106" r="3"   fill="#fff0c9"/></g>
+      <g class="bulb"><circle cx="1090" cy="124" r="14" fill="url(#bulbGlow)"/><circle cx="1090" cy="124" r="3"  fill="#fff0c9"/></g>
+    </g>
+  </svg>
+
+  <!-- oak leaves, corners -->
+  <svg class="leaf-corner" style="top:-16px; left:-14px;" viewBox="0 0 200 200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <use href="#oakleaf" transform="translate(18,116) rotate(-148) scale(0.62)"/>
+    <use href="#oakleaf" transform="translate(74,150) rotate(-121) scale(0.5)" opacity="0.8"/>
+    <use href="#oakleaf" transform="translate(114,88) rotate(-165) scale(0.42)" opacity="0.65"/>
+  </svg>
+  <svg class="leaf-corner" style="top:120px; right:-16px;" viewBox="0 0 200 200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <use href="#oakleaf" transform="translate(186,120) rotate(146) scale(0.58)" opacity="0.8"/>
+    <use href="#oakleaf" transform="translate(140,150) rotate(117) scale(0.44)" opacity="0.6"/>
+  </svg>
+
+  <div class="hero-content">
+    <h1>
+      <span class="headline metallic">Nothing<br>Fancy</span><br>
+      <span class="subline script metallic">just<span class="tiny-heart">♥</span>love</span>
+    </h1>
+
+    <p class="invite-line">Join us for a casual ceremony and cookout<br>to celebrate the love and marriage of</p>
+
+    <p class="names script metallic">Jeremiah &amp; Nichole</p>
+
+    <div class="heart-divider" aria-hidden="true"><span>♥</span></div>
+
+    <p class="when">Saturday, September 19th, 2026<br>at 3:00 pm</p>
+
+    <div class="heart-divider" aria-hidden="true"><span>♥</span></div>
+
+    <p class="where">
+      <span class="venue">Nine Hives Meadery</span><br>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV">1116 Cambria Road<br>Lumberport, WV</a>
+    </p>
+  </div>
+
+  <!-- misty ridgeline -->
+  <svg class="ridgeline" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#3a3a3a" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#4a4a4a" stop-opacity="0.5"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="60" width="1200" height="200" fill="url(#fog)"/>
+    <path d="M0,150 Q120,96 240,128 T480,110 Q600,70 720,116 T960,104 Q1080,80 1200,124 L1200,260 L0,260 Z" fill="#242424" opacity="0.85"/>
+    <path d="M0,190 Q150,140 300,168 T600,152 Q750,118 900,158 T1200,168 L1200,260 L0,260 Z" fill="#191919"/>
+    <path d="M0,225 Q200,192 400,212 T800,204 Q1000,182 1200,214 L1200,260 L0,260 Z" fill="#111111"/>
+    <g fill="#0c0c0c">
+      <path d="M60,260 L70,222 L80,260 Z M74,260 L82,230 L90,260 Z"/>
+      <path d="M180,260 L190,228 L200,260 Z"/>
+      <path d="M1020,260 L1032,220 L1044,260 Z M1038,260 L1047,232 L1056,260 Z"/>
+      <path d="M1130,260 L1140,230 L1150,260 Z"/>
+    </g>
+  </svg>
+</header>
+
+<!-- ================= COUNTDOWN ================= -->
+<section class="countdown" aria-label="Countdown to the big day">
+  <h2>Counting down to the big day</h2>
+  <div class="count-grid" id="countdown" role="timer" aria-live="off">
+    <div class="count-unit"><span class="num metallic" id="cd-days">—</span><span class="label">Days</span></div>
+    <div class="count-unit"><span class="num metallic" id="cd-hours">—</span><span class="label">Hours</span></div>
+    <div class="count-unit"><span class="num metallic" id="cd-mins">—</span><span class="label">Minutes</span></div>
+  </div>
+  <p class="count-date script">Saturday, September 19th, 2026</p>
+</section>
+
+<!-- ================= DETAILS ================= -->
+<section class="details" aria-label="Event details">
+  <div class="details-inner">
+
+    <div class="detail-block">
+      <h3 class="script metallic">When</h3>
+      <p class="smallcaps">Saturday, September 19th<br>3:00 pm</p>
+      <p class="fine">Plan to arrive by 2:45 so you can find a seat and say hello.</p>
+    </div>
+
+    <div class="detail-block">
+      <h3 class="script metallic">Where</h3>
+      <p class="smallcaps">Nine Hives Meadery<br>1116 Cambria Road<br>Lumberport, WV</p>
+      <a class="directions-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Nine+Hives+Meadery+1116+Cambria+Road+Lumberport+WV">Get Directions</a>
+    </div>
+
+    <div class="detail-block">
+      <h3 class="script metallic">What to Expect</h3>
+      <p>Casual dress — truly. An outdoor ceremony under the trees, with a cookout to follow.</p>
+      <p class="fine">Come as you are. There will be food, music, and two people very glad you showed up.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <svg class="leaf-corner" style="bottom:-14px; left:-16px; width: clamp(90px, 16vw, 170px);" viewBox="0 0 200 200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.55">
+      <use href="#oakleaf" transform="translate(24,86) rotate(28) scale(0.56)"/>
+      <use href="#oakleaf" transform="translate(66,116) rotate(58) scale(0.42)" opacity="0.75"/>
+    </g>
+  </svg>
+  <svg class="leaf-corner" style="bottom:-14px; right:-16px; width: clamp(90px, 16vw, 170px);" viewBox="0 0 200 200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.55">
+      <use href="#oakleaf" transform="translate(176,86) rotate(-28) scale(0.56)"/>
+      <use href="#oakleaf" transform="translate(134,116) rotate(-58) scale(0.42)" opacity="0.75"/>
+    </g>
+  </svg>
+
+  <p class="script metallic">Nothing Fancy — Just Love</p>
+  <p class="meta">September 19, 2026 &nbsp;•&nbsp; Lumberport, WV</p>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  var target = new Date('2026-09-19T15:00:00-04:00').getTime();
+  var elDays = document.getElementById('cd-days'),
+      elHours = document.getElementById('cd-hours'),
+      elMins = document.getElementById('cd-mins');
+  function tick() {
+    var diff = Math.max(0, target - Date.now());
+    elDays.textContent  = Math.floor(diff / 86400000);
+    elHours.textContent = Math.floor(diff / 3600000) % 24;
+    elMins.textContent  = Math.floor(diff / 60000) % 60;
+  }
+  tick();
+  setInterval(tick, 15000);
+</script>
+</body>
+</html>
