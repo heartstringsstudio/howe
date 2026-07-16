@@ -172,7 +172,13 @@
   .subline {
     font-size: clamp(2.6rem, 9vw, 5.2rem);
     line-height: 1.15;
-    margin-top: 0.4rem;
+    display: inline-block;
+    /* background-clip:text only paints glyphs inside the padding box, so give
+       Great Vibes' tall dots and swashes painted room; the negative margins
+       cancel the layout shift */
+    padding: 0.3em 0.5em 0.25em;
+    margin: 0.4rem -0.5em -0.25em;
+    margin-top: calc(0.4rem - 0.3em);
   }
   .subline .tiny-heart {
     display: inline-block;
