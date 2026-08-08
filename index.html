@@ -354,6 +354,41 @@
     display: block;
   }
 
+  /* ---------- portrait ---------- */
+
+  .portrait {
+    background: linear-gradient(180deg, #141414 0%, #171717 100%);
+    padding: 4.5rem 1.25rem 4.25rem;
+  }
+
+  .portrait figure {
+    max-width: 54rem;
+    margin: 0 auto;
+  }
+
+  .portrait-frame {
+    padding: 0.7rem;
+    border: 1px solid #3d3d3d;
+    background: #0f0f0f;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
+  }
+
+  .portrait-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .portrait figcaption {
+    margin: 1.5rem auto 0;
+    max-width: 32rem;
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 0.18em;
+    font-size: clamp(0.9rem, 2.4vw, 1.05rem);
+    color: var(--silver-dim);
+  }
+
   /* ---------- countdown ---------- */
 
   .countdown {
@@ -640,6 +675,20 @@
     </g>
   </svg>
 </header>
+
+<!-- ================= PORTRAIT ================= -->
+<section class="portrait" aria-label="Jeremiah and Nichole">
+  <figure>
+    <div class="portrait-frame">
+      <img src="jeremiah-and-nichole.jpg"
+           width="1500" height="995"
+           alt="Jeremiah and Nichole standing forehead to forehead in an open field, smiling at each other."
+           decoding="async"
+           onerror="var s=this.closest('.portrait'); if (s) s.hidden = true;">
+    </div>
+    <figcaption>September 19th can’t come soon enough.</figcaption>
+  </figure>
+</section>
 
 <!-- ================= COUNTDOWN ================= -->
 <section class="countdown" aria-labelledby="count-heading">
